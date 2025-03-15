@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Dashboard</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+      h1 {
+        color: #333;
+      }
+      .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        width: 90%;
+        max-width: 600px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: #007bff;
+        color: white;
+        font-size: 14px;
+      }
+      button:hover {
+        background: #0056b3;
+      }
+      .dropdown {
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .output {
+        text-align: left;
+        margin-top: 10px;
+      }
+      .user-box {
+        background: #e9ecef;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Social Media Dashboard</h1>
+    <div class="container">
+      <select id="filter-options" class="dropdown">
+        <option value="all">Show All Users</option>
+        <option value="active">Show Active Users</option>
+        <option value="popular">Show Popular Posts</option>
+        <option value="average">Show Average Likes</option>
+      </select>
+
+      <button onclick="filterData()">Apply Filter</button>
+
+      <div id="output" class="output"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
